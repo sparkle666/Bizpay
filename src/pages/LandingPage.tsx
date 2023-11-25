@@ -1,6 +1,7 @@
 import Hero from "../components/Hero"
 import InfoSection from "../components/InfoSection"
 import Navbar from "../components/Navbar"
+import SecondInfoSection from "../components/SecondInfoSection"
 
 const LandingPage = () => {
   return (
@@ -8,6 +9,7 @@ const LandingPage = () => {
       <Navbar />
       <Hero />
       <InfoSection />
+      <SecondInfoSection />
     </div>
   )
 }

@@ -1,9 +1,12 @@
 import { FC } from 'react'
 import ProfileIcon from "../assets/ProfileIcon.png"
+import ChatIcon from "../assets/ChatIcon.png"
+import NotificationIcon from "../assets/NotificationIcon.png"
+
 
 const InfoSection: FC = () => {
     return (
-        <div className='px-10 py-8 space-y-6'>
+        <div className='lg:px-10 lg:py-8 space-y-6 py-6'>
             <div className='text-center px-40'>
                 <p className='font-semibold text-[40px]'>What's
                     <span className='font-semibold text-[40px] text-[#2d302e]'> BIZ</span>
@@ -13,21 +16,21 @@ const InfoSection: FC = () => {
                     Create profiles, track payment transactions, and receive real-time alerts for unpaid invoices
                 </p>
             </div>
-            <div className='flex flex-col lg:flex-row space-x-6 px-12'>
+            <div className='flex flex-col lg:flex-row lg:space-x-6 lg:px-12 px-4 space-y-6'>
                 <div className='flex flex-col items-center bg-[#F7F7F7] rounded-md p-10 text-center'>
                     <div><img src={ProfileIcon} alt="A profile icon of two people" /></div>
                     <div className='font-semibold'>Create Client Profiles</div>
                     <div className='text-[16px]'>Easily create profile for each of your clients</div>
                 </div>
                 <div className='flex flex-col items-center bg-[#F7F7F7] rounded-md p-10 text-center'>
-                    <div><img src={ProfileIcon} alt="A profile icon of two people" /></div>
-                    <div className='font-semibold'>Create Client Profiles</div>
-                    <div className='text-[16px]'>Easily create profile for each of your clients</div>
+                    <div><img src={ChatIcon} alt="A profile icon of two people" /></div>
+                    <div className='font-semibold'>Track Payment Transactions</div>
+                    <div className='text-[16px]'>Effortlessly monitor and manage payment transactions</div>
                 </div>
                 <div className='flex flex-col items-center bg-[#F7F7F7] rounded-md p-10 text-center'>
-                    <div><img src={ProfileIcon} alt="A profile icon of two people" /></div>
-                    <div className='font-semibold'>Create Client Profiles</div>
-                    <div className='text-[16px]'>Easily create profile for each of your clients</div>
+                    <div><img src={NotificationIcon} alt="A profile icon of two people" /></div>
+                    <div className='font-semibold'>Receive Real-Time Alerts</div>
+                    <div className='text-[16px]'>Stay informed with real-time alerts for unpaid invoices</div>
                 </div>
             </div>
         </div>

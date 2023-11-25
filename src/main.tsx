@@ -8,12 +8,12 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import ErrorPage from './error-page.tsx';
-import LandingPage from './pages/LandingPage.tsx';
+import LandingPage from './pages/LandingPage';
 import Dashboard from './pages/Dashboard/Dashboard';
-import Invoice from './pages/Invoice/Invoice.tsx';
-import Clients from './pages/Clients/Clients.tsx';
-import Payment from './pages/Payment/Payment.tsx';
-import Notifications from './pages/Notifications/Notifications.tsx';
+import Invoice from './pages/Invoice/Invoice';
+import Clients from './pages/Clients/Clients';
+import Payment from './pages/Payment/Payment';
+import Notifications from './pages/Notifications/Notifications';
 
 const router = createBrowserRouter([
   {

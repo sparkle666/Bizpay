@@ -1,4 +1,5 @@
 import Hero from "../components/Hero"
+import InfoSection from "../components/InfoSection"
 import Navbar from "../components/Navbar"
 
 const LandingPage = () => {
@@ -6,6 +7,7 @@ const LandingPage = () => {
     <div>
       <Navbar />
       <Hero />
+      <InfoSection />
     </div>
   )
 }

@@ -3,6 +3,7 @@ import InfoSection from "../components/InfoSection"
 import Navbar from "../components/Navbar"
 import SecondInfoSection from "../components/SecondInfoSection"
 import ThirdSectionScrollable from "../components/ThirdSectionScrollable"
+import SimplifyPayments from "../components/SimplifyPayments"
 
 const LandingPage = () => {
   return (
@@ -12,6 +13,7 @@ const LandingPage = () => {
       <InfoSection />
       <SecondInfoSection />
       <ThirdSectionScrollable />
+      <SimplifyPayments />
     </div>
   )
 }

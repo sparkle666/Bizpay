@@ -1,10 +1,10 @@
 import { CiFilter } from "react-icons/ci";
-import { BsThreeDots } from "react-icons/bs";
 import { FiDownload } from "react-icons/fi";
 import RevenueTable from "./RevenueTable";
+import PaymentsTable from "./PaymentsTable.tsx";
 import PaidUnpaidGraph from "../../assets/Paid-unpaid.png"
 import Analytics from "../../assets/Analytics.png"
-import { PaymentData } from "./content"
+
 
 import NavbarLogoutDashboard from "../../components/NavbarLogoutDashboard";
 
@@ -69,6 +69,32 @@ const Dashboard = () => {
 
             <div className="flex-1 p-4 rounded-2xl bg-gray-200">
               <img src={PaidUnpaidGraph} className="" alt="Paid-unpaid" />
+            <div className="mt-8 md:flex justify-between space-y-8 md:space-y-0 gap-12">
+                <div className="flex-1 p-4 space-y-6 rounded-2xl bg-gray-200">
+                    <h2 className="font-semibold text-xl">
+                        Revenue Overview
+                    </h2>
+                    <RevenueTable />
+                </div>
+                <div className="flex-1 p-4 rounded-2xl bg-gray-200">
+                    <h2 className="font-semibold text-xl">
+                        Analytics
+                    </h2>
+                    <img src={Analytics} className="my-3" alt="analytics" />
+                </div>
+            </div>
+
+            <div className="mt-8 md:flex justify-between space-y-8 md:space-y-0 gap-12">
+                <div className="flex-1 p-4 space-y-6 rounded-2xl bg-gray-200">
+                    <h2 className="font-semibold text-xl">
+                        Recent Payments
+                    </h2>
+                    <PaymentsTable />
+                </div>
+
+                <div className="flex-1 p-4 rounded-2xl bg-gray-200">
+                    <img src={PaidUnpaidGraph} className="" alt="Paid-unpaid" />
+                </div>
             </div>
           </div>
         </section>

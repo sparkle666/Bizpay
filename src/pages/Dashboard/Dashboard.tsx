@@ -1,10 +1,10 @@
 import { CiFilter } from "react-icons/ci";
-import { BsThreeDots } from "react-icons/bs";
 import { FiDownload } from "react-icons/fi";
 import RevenueTable from "./RevenueTable";
+import PaymentsTable from "./PaymentsTable.tsx";
 import PaidUnpaidGraph from "../../assets/Paid-unpaid.png"
 import Analytics from "../../assets/Analytics.png"
-import { PaymentData } from "./content"
+
 
 
 const Dashboard = () => {
@@ -44,33 +44,7 @@ const Dashboard = () => {
                     <h2 className="font-semibold text-xl">
                         Recent Payments
                     </h2>
-
-                    {PaymentData.map((item, index) => (
-                        <div key={index}
-                            className="flex justify-between">
-                            <span className="flex gap-4">
-                                <img src={item.image} className="" alt="chicogogor" />
-                                <span>
-                                    <p className="font-semibold">
-                                        {item.name}
-                                    </p>
-                                    <p className="text-[#111111]">
-                                        {item.date}
-                                    </p>
-                                </span>
-                            </span>
-                            <p className="text-black py-3 font-semibold">
-                                {item.amount}
-                            </p>
-                            <p className={item.status === 'Done' ? 'rounded-xl font-semibold py-3 px-6 text-[#3BAA67] bg-[#DCFFD6]' : 'rounded-xl font-semibold py-3 px-6 text-[#937F59] bg-[#FFEDCB]'}>
-                                {item.status}
-                            </p>
-                            <button title="More">
-                                <BsThreeDots className="h-8 w-8 text-[#A0A0A0]" />
-                            </button>
-                        </div>
-                    ))}
-
+                    <PaymentsTable />
                 </div>
 
                 <div className="flex-1 p-4 rounded-2xl bg-gray-200">

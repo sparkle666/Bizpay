@@ -17,6 +17,10 @@ const Payment = () => {
                     </button>
                 </span>
             </div>
+
+            <div className="text-center">
+                <i className="">No payments yet..</i>
+            </div>
         </section>
     )
 }

@@ -18,6 +18,12 @@ img {
   /* user-drag: none; */
 }
 
+/* Custom Components */
+
+.btn{
+  @apply bg-secondary outline-0 text-white px-[18px] py-[12px]
+}
+
 ::-webkit-scrollbar {
   display: none;
 }

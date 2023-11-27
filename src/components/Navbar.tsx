@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import BizPay from "../assets/BIZPAY.png"
 
 const Navbar = () => {
@@ -27,8 +28,8 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end space-x-2">
-                <a className="btn btn-secondary outline-0 text-white px-[18px] py-[12px] ">Register</a>
-                <a className="btn btn-outline outline-0 border-0 text-[#E67E22]">Sign In</a>
+                <Link to="/signup" className="btn btn-secondary outline-0 text-white px-[18px] py-[12px] ">Register </Link>
+                <Link to="/signin" className="btn btn-outline outline-0 border-0 text-[#E67E22]">Sign In </Link>
             </div>
         </div>
     </>)

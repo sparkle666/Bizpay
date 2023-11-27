@@ -14,11 +14,29 @@ import Invoice from './pages/Invoice/Invoice';
 import Clients from './pages/Clients/Clients';
 import Payment from './pages/Payment/Payment';
 import Notifications from './pages/Notifications/Notifications';
+import SignUp from './pages/auth/SignUp.tsx';
+import SignIn from './pages/auth/SignIn.tsx';
+import CreatProfile from './pages/auth/CreatProfile.tsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <LandingPage />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/signin",
+    element: <SignIn />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/signup",
+    element: <SignUp />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/create-profile",
+    element: <CreatProfile />,
     errorElement: <ErrorPage />
   },
   {

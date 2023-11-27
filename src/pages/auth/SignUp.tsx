@@ -2,6 +2,7 @@ import { FC } from 'react'
 import { FiUser, FiPhone, } from "react-icons/fi";
 import { GoLock } from "react-icons/go";
 import { HiOutlineMail } from "react-icons/hi";
+import { Link } from 'react-router-dom';
 // import AuthCard from '../../components/AuthCard'
 
 const SignUp: FC = () => {
@@ -93,12 +94,15 @@ const SignUp: FC = () => {
             <p className="text-center text-sm text-gray-500">
               Already have an account?
             </p>
-            <button
-              type="submit"
-              className="block w-full rounded-lg border border-[#E67E22] px-5 py-3 text-sm font-medium text-[#E67E22]"
-            >
-              Sign In
-            </button>
+
+            <Link to="/signin">
+              <button
+                type='button'
+                className="block w-full rounded-lg border border-[#E67E22] px-5 py-3 text-sm font-medium text-[#E67E22]"
+              >
+                Sign In
+              </button>
+            </Link>
 
           </form>
         </div>

@@ -2,7 +2,7 @@ import { FC } from 'react'
 import { FiPhone, } from "react-icons/fi";
 import { GoLock } from "react-icons/go";
 import { HiOutlineMail } from "react-icons/hi";
-import SignUp from './SignUp';
+import { Link } from 'react-router-dom';
 
 const SignIn: FC = () => {
   return (
@@ -75,12 +75,14 @@ const SignIn: FC = () => {
             <p className="text-center text-sm text-gray-500">
               Don’t have an account?
             </p>
-            <button
-              type="submit"
-              className="block w-full rounded-lg border border-[#E67E22] px-5 py-3 text-sm font-medium text-[#E67E22]"
-            >
-              Sign Up
-            </button>
+            <Link to="/signup">
+              <button
+                type='button'
+                className="block w-full rounded-lg border border-[#E67E22] px-5 py-3 text-sm font-medium text-[#E67E22]"
+              >
+                Sign Up
+              </button>
+            </Link>
 
           </form>
         </div>

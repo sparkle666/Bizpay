@@ -1,5 +1,6 @@
 import { FC } from "react"
 import IPad from "../assets/iPadPro.png"
+import { Link } from "react-router-dom"
 
 const Hero: FC = () => {
     return (
@@ -9,9 +10,12 @@ const Hero: FC = () => {
                 <p>Our application allows small business owners to easily create <br />
                     profiles, track payment transactions, and receive real-time <br />
                     alerts for unpaid invoices</p>
-                <div className="space-x-3">
-                    <a href="" className="btn bg-secondary outline-0 border-none text-white">Get Started</a>
-                    <a href="" className="btn-outline border-0 font-semibold">Learn More</a>
+                <div className="space-x-4">
+                    <Link to="/signup"
+                        className="btn bg-secondary outline-0 border-none text-white">
+                        Get Started
+                    </Link>
+                    <a className="btn-outline border-0 font-semibold">Learn More</a>
                 </div>
             </div>
             <div>

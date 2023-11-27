@@ -3,7 +3,7 @@ import BizPay from "../assets/BIZPAY.png"
 
 const Navbar = () => {
     return (<>
-        <div className="navbar bg-base-100 top-0 fixed px-10">
+        <div className="navbar bg-base-100 top-0 fixed lg:px-10 px-4">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -14,9 +14,15 @@ const Navbar = () => {
                         <li><a>About Us</a></li>
                         <li><a>Services</a></li>
                         <li><a>Resources</a></li>
+                        <li>
+                            <Link to="/signup">Register </Link>
+                        </li>
+                        <li>
+                            <Link to="/signin">Sign In </Link>
+                        </li>
                     </ul>
                 </div>
-                <img src={BizPay} alt="" />
+                <img src={BizPay} className="ml-4 lg:ml-0" alt="" />
 
             </div>
             <div className="navbar-center hidden lg:flex">
@@ -27,9 +33,13 @@ const Navbar = () => {
                     <li><a>Resources</a></li>
                 </ul>
             </div>
-            <div className="navbar-end space-x-2">
-                <Link to="/signup" className="btn btn-secondary outline-0 text-white px-[18px] py-[12px] ">Register </Link>
-                <Link to="/signin" className="btn btn-outline outline-0 border-0 text-[#E67E22]">Sign In </Link>
+            <div className="navbar-end space-x-4">
+                <Link to="/signup" className="btn btn-secondary hidden md:flex ">
+                    Register
+                </Link>
+                <Link to="/signin" className="btn btn-secondary hidden md:flex ">
+                    Sign In
+                </Link>
             </div>
         </div>
     </>)

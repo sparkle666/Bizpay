@@ -1,9 +1,10 @@
+import { FC } from 'react'
 import SimplifyPayment from "../assets/simplifypayment.png"
 
-const SimplifyPayments = () => {
+const SimplifyPayments: FC = () => {
     return (
         <section className="max-w-screen-lg mx-auto py-6 px-4">
-            <div className="bg-[#3BAA67] flex justify-between rounded-lg p-6">
+            <div className="bg-[#3BAA67] sm:flex justify-between rounded-lg p-6">
                 <span className="space-y-10 pt-20">
                     <h1 className="text-white text-3xl">
                         Simplify Your Payment <br />

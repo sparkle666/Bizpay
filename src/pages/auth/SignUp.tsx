@@ -43,7 +43,7 @@ const SignUp: FC = () => {
         toast.success(result.message);
 
         setTimeout(() => {
-          navigate("/");
+          navigate("/signin");
         }, 10000);
 
       } else {
@@ -54,7 +54,7 @@ const SignUp: FC = () => {
       console.error("Error during signup:", error);
       toast.error("Error during signup. Please try again.");
     } finally {
-      setLoading(false); 
+      setLoading(false);
     }
   };
 
@@ -176,9 +176,8 @@ const SignUp: FC = () => {
 
             <button
               type="submit"
-              className={`block w-full rounded-lg bg-[#E67E22] px-5 py-3 text-sm font-medium text-white ${
-                loading ? "opacity-50 cursor-not-allowed" : ""
-              }`}
+              className={`block w-full rounded-lg bg-[#E67E22] px-5 py-3 text-sm font-medium text-white ${loading ? "opacity-50 cursor-not-allowed" : ""
+                }`}
               disabled={loading}
             >
               {loading ? "Signing Up..." : "Sign Up"}

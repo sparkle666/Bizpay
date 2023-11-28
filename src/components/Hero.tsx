@@ -12,16 +12,17 @@ const Hero: FC = () => {
                     alerts for unpaid invoices</p>
                 <div className="space-x-4">
                     <Link to="/signup"
-                        className="btn bg-secondary outline-0 border-none text-white">
+                        className="border border-orange-500 bg-orange-500 hover:bg-transparent hover:border-orange-500 hover:text-orange-500 text-white font-semibold py-3 px-4 rounded-md transition duration-200">
                         Get Started
                     </Link>
+
                     <a className="btn-outline text-[#111111] border-0 font-semibold">Learn More</a>
                 </div>
             </div>
             <div>
                 <img src={IPad} className="lg:block hidden" alt="An ipad image" />
             </div>
-        </div>
+        </div >
     )
 }
 

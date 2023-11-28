@@ -2,23 +2,25 @@
 
 const Newsletter = () => {
     return (
-        <section className="bg-white border-2 p-8 w-max rounded-md absolute -mt-20">
-            <div className="flex">
+        <section className="bg-white opacity-100 border-2 p-8 md:w-max mx-auto z-50 -mb-20">
+            <div className="md:flex justify-between gap-8">
                 <h1 className="text-[2rem] font-bold">
                     Enter your email and <br />
                     get our latest news
                 </h1>
 
-                <div className="relative gap-4 flex">
-                    <input
-                        type="text"
-                        id="Search"
-                        placeholder="Search for..."
-                        className="w-full h-max bg-transparent rounded-lg p-2 border border-gray-200"
-                    />
-                    <button className="h-max p-2 bg-[#E67E22] text-white rounded-md">
-                        Subscribe
-                    </button>
+                <div className="relative">
+                    <div className="sm:flex">
+                        <input
+                            type="text"
+                            id="Search"
+                            placeholder="Enter your email"
+                            className="w-full min-w-[10rem] h-max my-6 bg-transparent rounded-lg p-2 border border-gray-200"
+                        />
+                        <button className="h-max p-2 my-0 sm:my-6 bg-orange-500 text-white rounded-md">
+                            Subscribe
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>

@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import SimplifyPayment from "../assets/simplifypayment.png"
+import { Link } from 'react-router-dom'
 
 const SimplifyPayments: FC = () => {
     return (
@@ -10,9 +11,12 @@ const SimplifyPayments: FC = () => {
                         Simplify Your Payment <br />
                         Management Today
                     </h1>
-                    <button className="bg-[#E67E22]/90 hover:bg-[#E67E22] text-white p-2 rounded-md">
-                        Create a free account
-                    </button>
+                    <Link to="signup" className='inline-block'>
+                        <button
+                            className="border border-orange-500 bg-orange-500 hover:bg-transparent hover:border-orange-500 text-white py-3 px-4 rounded-md transition duration-200">
+                            Create a free account
+                        </button>
+                    </Link>
                 </span>
                 <span>
                     <img src={SimplifyPayment} className="" alt="vector" />

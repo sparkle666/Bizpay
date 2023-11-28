@@ -16,7 +16,7 @@ const SecondInfoSection: FC = () => {
                         transactions, and receive real-time alerts for unpaid invoices
                     </p>
                     <Link to="/signup"
-                        className="btn bg-secondary border-none text-white">
+                        className="border border-orange-500 bg-orange-500 hover:bg-transparent hover:border-orange-500 hover:text-orange-500 text-white font-semibold py-3 px-4 rounded-md transition duration-200 inline-block">
                         Register
                     </Link>
                 </div>

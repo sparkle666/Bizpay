@@ -3,7 +3,7 @@ import BizPay from "../assets/BIZPAY.png"
 
 const Navbar = () => {
     return (<>
-        <div className="navbar bg-base-100 top-0 fixed lg:px-10 px-4">
+        <div className="navbar bg-[#F7F7F7] border-b text-[#111111] z-[100] font-semibold top-0 fixed lg:px-10 px-4">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -34,10 +34,12 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end space-x-4">
-                <Link to="/signup" className="btn btn-secondary hidden md:flex ">
-                    Register
+                <Link to="/signup"
+                    className="border hidden md:flex border-orange-500 hover:bg-orange-500 hover:text-white bg-transparent hover:border-orange-500 hover:text-orange-500 text-orange-500 font-semibold py-3 px-4 rounded-md transition duration-200">
+                    Sign Up
                 </Link>
-                <Link to="/signin" className="btn btn-secondary hidden md:flex ">
+                <Link to="/signin"
+                    className="border hidden md:flex border-orange-500 bg-orange-500 hover:bg-transparent hover:border-orange-500 hover:text-orange-500 text-white font-semibold py-3 px-4 rounded-md transition duration-200">
                     Sign In
                 </Link>
             </div>

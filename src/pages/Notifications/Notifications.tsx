@@ -13,6 +13,10 @@ const Notifications = () => {
                     </button>
                 </span>
             </div>
+
+            <div className="text-center">
+                <i className="">No Notifications yet..</i>
+            </div>
         </section>
     )
 }

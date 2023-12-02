@@ -6,7 +6,7 @@ import NotificationIcon from "../assets/NotificationIcon.png"
 
 const InfoSection: FC = () => {
     return (
-        <div className='lg:px-10 lg:py-8 space-y-6 py-6'>
+        <div className='lg:px-10 lg:py-8 bg-white space-y-6 py-6'>
             <div className='text-center px-10'>
                 <p className='font-semibold text-[40px]'>What's
                     <span className='font-semibold text-[40px] text-[#2d302e]'> BIZ</span>

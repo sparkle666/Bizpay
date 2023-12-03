@@ -7,7 +7,7 @@ import { FiFacebook, FiLinkedin } from "react-icons/fi";
 
 const Footer = () => {
     return (
-        <section className="bg-[#3BAA671A]">
+        <section className=" bg-[#3BAA671A]">
             <div className="max-w-screen-xl mx-auto lg:px-10 px-4 py-8 pt-32">
                 <img src={BizPay} className="ml-4 lg:ml-0" alt="" />
                 <div className="md:flex justify-center gap-6 text-center md:space-y-0 space-y-4 font-semibold text-[#111111] pt-16 pb-24">

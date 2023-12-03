@@ -6,6 +6,8 @@ import ThirdSectionScrollable from "../components/ThirdSectionScrollable"
 import SimplifyPayments from "../components/SimplifyPayments"
 import Newsletter from "../components/Newsletter"
 import Footer from "../components/Footer"
+import NewsletterBg from "../components/NewsletterBg"
+
 
 const LandingPage = () => {
   return (
@@ -16,10 +18,11 @@ const LandingPage = () => {
       <SecondInfoSection />
       <ThirdSectionScrollable />
       <SimplifyPayments />
-      <Newsletter />
+     <NewsletterBg/>
+      <Newsletter  />
       <Footer />
     </div>
-  )
+  );
 }
 
 export default LandingPage
